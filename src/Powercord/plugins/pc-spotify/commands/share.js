@@ -9,7 +9,7 @@ module.exports = {
     if (SpotifyPlayer.player.item.external_urls) {
       messages.sendMessage(
         channels.getChannelId(),
-        { content: SpotifyPlayer.player.item.external_urls.spotify }
+        { content: `${SpotifyPlayer.player.item.external_urls.spotify} args.join(" ")` }
       );
     }
   }
